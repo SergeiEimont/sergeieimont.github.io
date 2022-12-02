@@ -7,12 +7,12 @@
 </head>
 
 <body>
-    <header class="header-page">
+    <header class="header-page desktop-none">
         <nav class="header-page__nav">
             <a href="#" class="nav-item burger">
                 <img src="/icons/ic/burger.svg" alt="" class="burger-icon">
             </a>
-            <div class="divider mobile_none"></div>
+            <div class="divider mobile_none tablet_none"></div>
             <a href="#" class="nav-item logo">
                 <img src="/icons/ic/logo.svg" alt="" class="logo-icon">
             </a>
@@ -35,14 +35,20 @@
         </nav>
     </header>
     <main>
-        <div class="page-name">
-            <img src="/asset/highlight.svg" alt="" class="highligh">
-            <span class="page-name__text">
-                <h1>Услуги и сервисы</h1>
-            </span>
+        <div class="page-name page-desktop">
+            <h1 class="page-name__text">Услуги и сервисы</h1>
+            <div class="desktop-show__link status-link tablet_none">
+                <span class="link-text">Оставить заявку</span>
+                <a href="#" class="nav-item checkstatus ">
+                    <img src="/icons/ic/checkstatus.svg" alt="" class="checkstatus-icon"></a>
+            </div>
+            <div class="desktop-show__link repair-link tablet_none">
+                <span class="link-text">Статус ремонта</span>
+                <a href="#" class="nav-item checkstatus ">
+                    <img src="/icons/ic/repair.svg" alt="" class="repair-icon"></a>
+            </div>
         </div>
         <nav class="page-menu">
-
             <a href="#" class="page-menu__nav-item">Ремонтируемые бренды</a>
             <a href="#" class="page-menu__nav-item">Ремонтируемые устройства</a>
             <a href="#" class="page-menu__nav-item">Цены на услуги</a>
@@ -50,20 +56,17 @@
             <a href="#" class="page-menu__nav-item">Специальные цены</a>
             <a href="#" class="page-menu__nav-item">Отзывы</a>
         </nav>
-        <article class="text_about">
-            <div class="container_text">
+        <article class="text-about">
+            <div class="text-about__content">
                 <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                 <p class="mobile_none">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-
                 <div class="read-more">
                     <a href="#" class="read-more__link">
                         <img src="/icons/ic/ic/expand.svg" alt="" class="expand"><span class="read-more__text">Читать далее</span>
                     </a>
                 </div>
             </div>
-            <figure class="text_about__image">
-                <img src="images/_MG_3223.jpg" alt="" class="image_img">
-            </figure>
+            <img src="images/_MG_3223.jpg" alt="" class="text-about__image" width="auto">
         </article>
     </main>
 </body></html>
