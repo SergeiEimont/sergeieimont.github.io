@@ -1,9 +1,100 @@
-@font-face {
-    font-family: 'TT Lakes', sans-serif;
-    src: url('/fonts/TTLakes-Regular.ttf') format('truetype');
+@media(max-width: 500px) {
+    .tablet_none {
+        display: none;
+    }
+    
+    .mobile_none {
+        display: none;
+    }
+
+    .nav-item.logo {
+        margin-left: 16.73px;
+    }
+
+    .text-about__image {
+        width: 100%;
+    }
 }
 
+@media(min-width: 501px) and (max-width: 1119px) {
+    .tablet_none {
+        display: none;
+    }
+    
+    .text-about {
+        display: flex;
+        align-content: center;
+        margin-right: 0;
+    }
+
+    .text-about__content {
+        width: 312px;
+    }
+
+    img.text-about__image {
+        width: 50%;
+        height: 100%;
+        margin: 20px 25px 40px 48px;
+        border-radius: 6px;
+    }
+    .text-about__content {
+        width: 312px;
+    }
+}
+
+@media(min-width: 1120px) {
+    .desktop-none {
+        display: none;
+    }
+    .text-about {
+        display: flex;
+        align-content: center;
+        margin-right: 0;
+    }
+
+    .text-about__content {
+        width: 50%;
+    }
+
+    img.text-about__image {
+        width: 50%;
+        height: 50%;
+        margin: 20px 25px 40px 48px;
+        border-radius: 6px;
+    }
+    .text-about__content {
+        width: 312px;
+    }
+    
+    .page-name.page-desktop {
+        display: flex;
+        margin-right: 32px;
+        margin-top: 10px;
+    }
+    
+    
+    
+    .status-link {
+        margin-left: auto;
+    }
+    
+    .desktop-show__link {
+        display: flex;
+        vertical-align: middle;
+    }
+    
+    .link-text {
+        margin-right: 8px;
+        align-self: center;
+         font-size: 16px;
+        letter-spacing: -0.2px;
+        font-family: TT Lakes, sans-serif;   
+    }
+}
+
+
 a {
+    color: black;
     text-decoration: none;
 }
 
@@ -11,19 +102,16 @@ a:visited {
     color: black
 }
 
-
-
 body {
-    margin: 0;
+    margin: auto;
+    max-width: 1140px;
 }
-
 
 .divider {
     border-left: 2px solid #EAEAEA;
     height: 32px;
     margin-left: 20px;
     margin-right: 20px;
-
 }
 
 
@@ -51,31 +139,23 @@ body {
     margin-right: 0;
 }
 
-.page-name {
+.page-name__text {
+    margin: 0;
+    padding-left: 20px;
+    border-left: 4px solid #41F6D7;
     display: flex;
     color: #1B1C21;
     font-size: 28px;
     letter-spacing: -0.6px;
     font-family: TT Lakes, sans-serif;
-
 }
-
-.highligh {
-    margin-right: 20px;
-}
-
-main {
-    background-color: #F8F8F8;
-    border-top: 1px solid #D9FFF5;
-}
-
 
 .page-menu {
     width: auto;
     display: flex;
     justify-content: space-between;
     padding-top: 17px;
-    padding-right: 2px;
+    padding-right: 24px;
     margin-left: 24px;
     overflow-x: scroll;
 
@@ -99,7 +179,7 @@ main {
     color: #7E7E82;
     font-family: TT lakes, sans-serif;
     white-space: nowrap;
-
+    margin-left: 2px
 }
 
 
@@ -109,24 +189,32 @@ main {
     box-shadow: 0 0 0 2px #B8FFEC;
 }
 
-.text_about {
-    display: flex;
+
+
+main {
+    background: #F8F8F8;
+    border-top: 1px solid #D9FFF5;
+    padding-top: 24px;
+
+}
+
+.page-name {
+    margin-top: 0;
+}
+
+
+.text-paragraph {
+    padding-left: 24px;
+}
+
+.text-about__content {
     margin-left: 24px;
-    margin-top: 32px;
+    margin-right: 24px;
+    font-family: TT Lakes, sans-serif;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
     font-size: 14px;
-    margin-bottom: 54px;
 }
-
-.read-more {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 1px;
-    white-space: nowrap;
-
-}
-
-
 
 .read-more__text {
     margin-left: 8px;
@@ -135,55 +223,8 @@ main {
     vertical-align: super;
 }
 
-figure {
-    margin: 0;
-    padding: 0;
+.read-more {
+    margin-bottom: 20px;
 }
 
-.container_text {
-    width: 312px;
-    font-family: TT Lakes, sans-serif;
-    color: #1B1C21;
-    letter-spacing: 0.2px;
-    font-size: 14px;
-
-}
-
-.image_img {
-    margin-left: 48px;
-    margin-right: 25px;
-    border-radius: 6px;
-}
-
-
-}
-
-.text_about__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-@media(max-width: 480px) {
-    .mobile_none {
-        display: none;
-    }
-
-    .nav-item.logo {
-        margin-left: 16.73px;
-    }
-
-    .text_about {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .image_img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-
-}
-
+.text-about {}
