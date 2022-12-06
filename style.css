@@ -8,6 +8,43 @@ a {
     text-decoration: none;
 }
 
+a.burger {
+    width: 40px;
+    height: 40px;
+    background: url(icons/ic/burger.svg);
+}
+
+a.call {
+    width: 40px;
+    height: 40px;
+    background:  url(icons/ic/call.svg);
+}
+
+a.chat {
+    width: 40px;
+    height: 40px;
+    background:  url(icons/ic/chat.svg);
+}
+
+a.profile {
+    width: 40px;
+    height: 40px;
+    background:  url(icons/ic/profile.svg);
+}
+
+a.repair {
+    width: 40px;
+    height: 40px;
+    background:  url(icons/ic/repair.svg);
+}
+
+a.checkstatus {
+    width: 40px;
+    height: 40px;
+    background:  url(icons/ic/checkstatus.svg);
+}
+
+
 a:visited {
     color: black
 }
@@ -70,6 +107,10 @@ body {
     overflow-x: scroll;
 
 
+}
+
+.page-menu::-webkit-scrollbar {
+    width: 0;
 }
 
 .page-menu__nav-item {
@@ -137,7 +178,7 @@ main {
     margin-bottom: 20px;
 }
 
-@media(max-width: 320px) {
+@media(max-width: 767px) {
     .tablet_none {
         display: none;
     }
@@ -155,7 +196,7 @@ main {
     }
 }
 
-@media(min-width: 321px) and (max-width: 1119px) {
+@media(min-width: 768px) and (max-width: 1119px) {
     .tablet_none {
         display: none;
     }
@@ -243,3 +284,4 @@ main {
         font-family: TT Lakes, sans-serif;   
     }
 }
+
