@@ -3,6 +3,11 @@
     src: url(/fonts/TTLakes-Regular.ttf);
 }
 
+@font-face {
+    font-family: TT Lakes-Bold;
+    src: url(/fonts/TTLakes-Bold.ttf);
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -41,7 +46,7 @@ a.repair {
 a.checkstatus {
     width: 40px;
     height: 40px;
-    background:  url(icons/ic/checkstatus.svg);
+    background: url(icons/ic/checkstatus.svg);
 }
 
 
@@ -94,7 +99,7 @@ body {
     color: #1B1C21;
     font-size: 28px;
     letter-spacing: -0.6px;
-    font-family: TT Lakes, sans-serif;
+    font-family: TT Lakes-Bold;
 }
 
 .page-menu {
@@ -151,6 +156,7 @@ main {
 
 .page-name {
     margin-top: 0;
+    font-family: TT Lakes-Bold;
 }
 
 
