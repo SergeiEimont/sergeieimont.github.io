@@ -1,0 +1,152 @@
+@font-face {
+    font-family: TT Lakes;
+    src: url(/fonts/TTLakes-Regular.ttf);
+}
+
+body {
+    width: 320px;
+    padding: 0;
+    padding-bottom: 32px;
+    margin: 0;
+    box-shadow: 16px 0 25px 2px #0E185033
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black
+}
+
+.sidemenu-header__nav {
+    height: 88px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 0;
+    align-items: center
+}
+
+
+
+.logo {
+
+    margin-left: 16.73px;
+    margin-right: 77.73px;
+
+}
+
+.main-menu {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+}
+
+.main-meni__item {
+    padding-left: 20px;
+    margin-bottom: 32px;
+    font-family: TT Lakes;
+    font-size: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.main-meni__item:hover {
+     padding-left: 20px;
+    margin-bottom: 32px;
+    font-family: TT Lakes;
+    font-size: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    border-left: 4px solid #41F6D7;
+    transition: 0.25s;
+}
+
+
+
+
+.sidemenu-footer__nav {
+    margin-top: 232px;
+    margin-left: 24px;
+}
+
+.sidemenu-footer__mail {
+    margin-left: 24px;
+    font-family: TT Lakes;
+    font-size: 16px;
+}
+
+.phone-text {
+    margin-left: 24px;
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-weight: bold
+}
+
+.language-setting {
+    margin-left: 24px;
+    margin-top: 40px;
+}
+
+.language-setting__switcher {
+    margin-right: 7px;
+    font-family: TT Lakes;
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.language-setting__switcher:hover {
+     margin-right: 7px;
+    font-family: TT Lakes;
+    color: #7E7E82;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a.burger-close {
+    width: 40px;
+    height: 40px;
+    background: url(ic/burger.svg);
+}
+
+a.search {
+    width: 40px;
+    height: 40px;
+    background: url(ic/burger.svg);
+}
+
+.call {
+    
+ 
+}
+
+
+.sidemenu-footer__nav-item.call {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(ic/chat%20copy.svg);
+    margin-right: 16px;
+}
+
+
+.sidemenu-footer__nav-item.chat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(ic/chat.svg);
+    margin-right: 16px;
+}
+
+
+.sidemenu-footer__nav-item.profile {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(ic/profile.svg);
+    margin-right: 16px;
+}
